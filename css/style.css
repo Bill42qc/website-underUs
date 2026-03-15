@@ -445,6 +445,35 @@ body {
   direction: ltr;
 }
 
+/* Sans microtransactions : pas d'image, titre très gros et clignotant */
+.feature-no-media .section-inner {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.feature-title-blink {
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+  text-align: center;
+  animation: title-blink 1.5s ease-in-out infinite;
+}
+
+@keyframes title-blink {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 0 0 40px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    opacity: 0.75;
+    text-shadow: 0 0 40px rgba(0, 212, 255, 0.8), 0 0 80px rgba(0, 212, 255, 0.5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-title-blink {
+    animation: none;
+  }
+}
+
 /* ----- Footer ----- */
 .site-footer {
   padding: 2.5rem 1.5rem 2rem;
@@ -469,8 +498,17 @@ body {
 
 .footer-company {
   font-size: 0.9rem;
-  color: var(--text-muted);
   margin: 0 0 1rem;
+}
+
+.footer-company a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition-smooth);
+}
+
+.footer-company a:hover {
+  color: var(--neon-cyan);
 }
 
 .footer-social {
