@@ -449,12 +449,24 @@ body {
 .feature-no-media .section-inner {
   grid-template-columns: 1fr;
   text-align: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.feature-no-media .section-content {
+  min-width: 0;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .feature-title-blink {
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
   text-align: center;
   animation: title-blink 1.5s ease-in-out infinite;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 @keyframes title-blink {
@@ -632,6 +644,26 @@ body {
 
   .section-media {
     max-width: 100%;
+  }
+
+  /* Section Sans microtransactions : centrée, sans débordement sur mobile */
+  .feature-no-media .section-inner {
+    padding: 0;
+  }
+
+  .feature-no-media .section-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .feature-title-blink {
+    font-size: clamp(1.5rem, 6vw, 2.25rem) !important;
+  }
+
+  .feature-no-media .section-content p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
