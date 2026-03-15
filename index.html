@@ -16,7 +16,7 @@
       <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
+      <ul class="nav-links nav-links-desktop">
         <li><a href="#story" data-i18n="nav.story">Histoire</a></li>
         <li><a href="#features" data-i18n="nav.features">Caractéristiques</a></li>
         <li><a href="legal.html" data-i18n="nav.legal">Mentions légales</a></li>
@@ -34,6 +34,18 @@
       </div>
     </nav>
   </header>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+  <ul class="nav-links nav-drawer" id="nav-drawer" aria-hidden="true">
+    <li><a href="#story" data-i18n="nav.story">Histoire</a></li>
+    <li><a href="#features" data-i18n="nav.features">Caractéristiques</a></li>
+    <li><a href="legal.html" data-i18n="nav.legal">Mentions légales</a></li>
+    <li class="nav-steam-wrap">
+      <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer" class="nav-steam">
+        <img src="media/steam%20logo.jpg" alt="" width="20" height="20" class="nav-steam-icon">
+        <span data-i18n="banner.wishlist">Wishlist on Steam</span>
+      </a>
+    </li>
+  </ul>
 
   <main>
     <section class="hero">
