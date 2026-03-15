@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Us – Survival Horror</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="logo-mini" aria-label="Under Us Home">UNDER US</a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#story" data-i18n="nav.story">Histoire</a></li>
+        <li><a href="#features" data-i18n="nav.features">Caractéristiques</a></li>
+        <li><a href="legal.html" data-i18n="nav.legal">Mentions légales</a></li>
+        <li class="nav-steam-wrap">
+          <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer" class="nav-steam">
+            <img src="media/steam%20logo.jpg" alt="" width="20" height="20" class="nav-steam-icon">
+            <span data-i18n="banner.wishlist">Wishlist on Steam</span>
+          </a>
+        </li>
+      </ul>
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <span class="lang-sep">|</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Space and meteors background">
+        <img src="media/under_us_library_banner_3840x1240.jpg" alt="" class="hero-bg-img">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-logo-wrap">
+        <img src="media/under_us_library_logo_1280x720.png" alt="Under Us" class="hero-logo hero-logo-neon">
+      </div>
+      <div class="hero-scroll-hint">
+        <span data-i18n="hero.scroll">Découvrir</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
+    </section>
+
+    <section class="intro section-organic" id="story">
+      <div class="section-inner">
+        <div class="section-media section-media-video">
+          <video src="media/under%20us%20animated.mp4" autoplay muted loop playsinline aria-label="Under Us gameplay"></video>
+        </div>
+        <div class="section-content">
+          <h2 class="section-title" data-i18n="intro.title">L'apocalypse a un nom</h2>
+          <p class="intro-p" data-i18n="intro.p1">Après que plusieurs météores aient frappé la Terre pendant plus de 48 heures, un phénomène étrange et terrifiant émerge des profondeurs. Des créatures inconnues envahissent la surface, et le monde tel que nous le connaissions n'est plus. Vous êtes l'un des derniers survivants dans ce monde dévasté, où chaque nuit devient un véritable cauchemar.</p>
+          <p class="intro-p" data-i18n="intro.p2">Under Us est un jeu de survival horror où la tension est omniprésente. Les journées sont vos seules occasions de vous préparer, d'explorer et de planifier. Mais dès que le soleil se couche, tout change… les ténèbres vous envahissent et des créatures cauchemardesques rôdent, prêtes à vous dévorer. Chaque nuit est une lutte pour votre survie.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="features-inner">
+        <article class="feature section-organic" data-feature="story">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.story.title">Une histoire immersive</h3>
+              <p data-i18n="features.story.desc">Plongez dans une intrigue mystérieuse, avec des révélations inquiétantes au fil du jeu. À chaque pas, vous découvrirez des secrets terrifiants sur l'origine des météores et les créatures qui ont envahi la planète.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="sandbox">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot2.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.sandbox.title">Mode Bac à Sable</h3>
+              <p data-i18n="features.sandbox.desc">Explorez et survivez à votre propre rythme dans un mode libre, que vous soyez en solo ou avec des amis. Découvrez des lieux secrets, construisez des abris et survivez aux dangers de la nuit dans un monde ouvert.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="nights">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot3.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.nights.title">Nuits imprévisibles et terrifiantes</h3>
+              <p data-i18n="features.nights.desc">La nuit, tout peut arriver. Les créatures deviennent plus agressives, les phénomènes étranges se multiplient et l'atmosphère devient de plus en plus angoissante. Préparez-vous à l'inattendu.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="survival">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.survival.title">Système de survie réaliste</h3>
+              <p data-i18n="features.survival.desc">Mangez, buvez et chassez pour survivre. Trouvez des sources d'eau, traquez des animaux pour leur viande et construisez des outils de survie pour rester en vie dans un environnement hostile.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="building">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot2.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.building.title">Construction d'abris et d'outils</h3>
+              <p data-i18n="features.building.desc">Créez des abris solides pour résister aux intempéries et aux créatures qui rôdent. Concevez des armes, des pièges et des structures élaborées pour vous protéger contre les menaces qui vous entourent.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="ecosystem">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot3.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.ecosystem.title">Écosystème vivant et complexe</h3>
+              <p data-i18n="features.ecosystem.desc">La faune du jeu interagit avec l'environnement et les autres créatures selon des comportements réalistes : prédateurs, proies, charognards, et créatures passives-agressives, tout influence la dynamique du jeu.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="xp">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.xp.title">Système d'expérience et d'attributs</h3>
+              <p data-i18n="features.xp.desc">Gagnez de l'expérience pour améliorer vos compétences et personnaliser votre style de survie. Placez des points dans des attributs essentiels pour affronter la menace grandissante.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="minigames">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot2.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.minigames.title">Mini-jeux et butins rares</h3>
+              <p data-i18n="features.minigames.desc">Débloquez des mini-jeux au fur et à mesure de votre progression. Ces défis vous permettront de gagner des armes et des protections de rareté variée.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature section-organic" data-feature="nomicropay">
+          <div class="section-inner">
+            <div class="section-media">
+              <img src="media/underUsScreenshot3.png" alt="" loading="lazy">
+            </div>
+            <div class="section-content">
+              <h3 data-i18n="features.nomicropay.title">Sans microtransactions</h3>
+              <p data-i18n="features.nomicropay.desc">Aucun achat en jeu ! Vous avez tout ce dont vous avez besoin dès que vous entrez dans l'univers de Under Us.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">UNDER US</p>
+      <p class="footer-company">Skills Issue Entertainment</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-link">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer-social-link">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+      <p class="footer-legal"><a href="legal.html" data-i18n="footer.legal">Mentions légales</a></p>
+      <p class="footer-copy" data-i18n="footer.copyright">© 2026 Skills Issue Entertainment. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
