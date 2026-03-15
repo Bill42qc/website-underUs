@@ -553,6 +553,17 @@ body {
   color: var(--neon-cyan);
 }
 
+.footer-disclaimer {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.8;
+  margin: 0 0 0.4rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
 .footer-copy {
   font-size: 0.8rem;
   color: var(--text-muted);
