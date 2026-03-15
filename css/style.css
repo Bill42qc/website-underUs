@@ -353,9 +353,23 @@ body {
   border-radius: 24px;
 }
 
+/* Vidéo : fond comme le site, pas de bordure noire visible */
+.section-media-video {
+  background: var(--bg-deep);
+  box-shadow: none;
+  overflow: hidden;
+}
+
 .section-media-video video {
   object-fit: cover;
+  object-position: center;
   max-height: 500px;
+  background-color: var(--bg-deep);
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  /* Sur-taille pour masquer complètement les traits noirs dus au rendu (sub-pixel) */
+  transform: scale(1.05);
 }
 
 .section-content {
